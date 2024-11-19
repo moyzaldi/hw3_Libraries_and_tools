@@ -1,6 +1,4 @@
 from selene import browser, be, have
-import pytest
-
 
 def test_search_positive():
     browser.element('[name="q"]').should(be.blank).type('yashaka/selene').press_enter()
